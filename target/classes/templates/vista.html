@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Datos de Energía</title>
+</head>
+<body>
+<h1>Producción</h1>
+<table border="1">
+  <tr>
+    <th>Country</th><th>Year</th><th>Solar</th><th>Wind</th><th>Hydro</th>
+  </tr>
+  <tr th:each="p : ${produccion}">
+    <td th:text="${p.country}"></td>
+    <td th:text="${p.year}"></td>
+    <td th:text="${p.solar}"></td>
+    <td th:text="${p.wind}"></td>
+    <td th:text="${p.hydro}"></td>
+  </tr>
+</table>
+
+<h1>Consumo</h1>
+<table border="1">
+  <tr>
+    <th>Country</th><th>Year</th><th>Solar</th><th>Wind</th><th>Hydro</th>
+  </tr>
+  <tr th:each="c : ${consumo}">
+    <td th:text="${c.country}"></td>
+    <td th:text="${c.year}"></td>
+    <td th:text="${c.solar}"></td>
+    <td th:text="${c.wind}"></td>
+    <td th:text="${c.hydro}"></td>
+  </tr>
+</table>
+</body>
+</html>

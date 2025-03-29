@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #6A9C89;">
+<header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light" style="background-color: #FFF5E4;">
+        <div class="container-fluid" style="align-items: center;">
+            <a class="navbar-brand" href="http://localhost:8080/" style="margin: 0%;">
+                <img src="frontend/assets/nav-icon.png" alt="Logo" width="63" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="justify-content: left;">
+                        <a class="nav-link active" aria-current="page" href="http://localhost:8080/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/quienes.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Funcionalidades
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="frontend/produccion.html">Produccion</a></li>
+                            <li><a class="dropdown-item" href="frontend/consumo.html">Consumo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main style="background-color: #6A9C89;">
+    <div id="carouselExample" class="carousel slide" style="max-width: 100%; margin: 0 auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="frontend/assets/slide1.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 520px;">
+                <div class="carousel-caption d-none d-md-block text-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <h2 class="text-white" style="font-size: 2rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">Analizamos la productividad de fuentes energéticas sostenibles en Colombia</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="frontend/assets/slide2.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 520px;">
+                <div class="carousel-caption d-none d-md-block text-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <h2 class="text-white" style="font-size: 2rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">Con foco en las energías renovables: solar, hidroeléctrica y eólica.</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="frontend/assets/slide3.jpg" class="d-block w-100" alt="..." style="object-fit: cover; height: 520px;">
+                <div class="carousel-caption d-none d-md-block text-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <h2 class="text-white" style="font-size: 2rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">Tomamos datos de paises vecinos como: Chile, Argentina y Brasil para comparar su producción y consumo</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <div class="card" style="background-color: #C1D8C3; padding: 15px; border-radius: 10px;">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6">
+                    <div class="card-body" style="padding-top: 10px;">
+                        <h2 class="card-title text-center text-shadow mb-3" style="font-size: 2rem;">Objetivo</h2>
+                        <p class="card-text text-center text-shadow" style="font-size: 1.1rem;">Colombia depende principalmente de la energía hidroeléctrica, haciéndola vulnerable a sequías que reducen su capacidad energética. Aunque el país tiene potencial en energía eólica y solar, aún no aprovecha suficientemente estos recursos renovables.</p>
+                        <p class="card-text text-center text-shadow" style="font-size: 1.1rem;">Queremos analizar la producción y el consumo histórico de energía hidroeléctrica, eólica y solar en Colombia, Brasil, Argentina y Chile mediante una aplicación web, para identificar prácticas que permitan diversificar la matriz energética colombiana.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="display: flex; justify-content: center;">
+                    <!-- Ajuste del tamaño de la imagen y reducción del espacio -->
+                    <img src="frontend/assets/img-objetivo.jpg" class="img-fluid" alt="Imagen de objetivos" style="max-width: 80%; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4" style="background-color: #6A9C89;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #C1D8C3;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Experiencia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">¿Qué puede hacer en nuestro proyecto?</h6>
+                        <p class="card-text flex-grow-1">Nuestro proyecto le permite explorar y comparar la producción y el consumo de energías renovables en países de América Latina como Colombia, Brasil, Chile y Argentina. A través de una aplicación web interactiva, podrá visualizar datos históricos y tendencias en energía hidroeléctrica, eólica y solar, facilitando el análisis de oportunidades para el desarrollo sostenible en la región.</p>
+                        <div>
+                            <a href="frontend/produccion.html" class="card-link">Analisis de producción</a>
+                            <a href="frontend/consumo.html" class="card-link">Analisis de consumo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #C1D8C3;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Energías</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">¿Por qué estas energías?</h6>
+                        <p class="card-text flex-grow-1">Nuestro proyecto se enfoca en la comparación de tres fuentes de energía renovable: solar, eólica e hidroeléctrica, debido a su alto potencial para fortalecer las matrices energéticas de los países de América Latina. La energía solar y eólica son particularmente atractivas porque son abundantes, sostenibles y con una huella ambiental mínima. Buscamos identificar cómo su adopción puede mejorar la estabilidad energética.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100" style="background-color: #C1D8C3;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Datos históricos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">¿De dónde salen nuestros datos?</h6>
+                        <p class="card-text flex-grow-1">Nuestro dataset de Kaggle es esencial para el análisis, ya que proporciona datos históricos detallados sobre la producción y el consumo de energías renovables en países como Colombia, Brasil, Chile y Argentina. Con información sobre energía hidroeléctrica, eólica y solar desde 1980 hasta 2022, podemos realizar comparaciones directas entre estos países.</p>
+                        <a href="https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022" class="card-link">Data set</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="text-white py-2" style="background-color: #000000;">
+    <div class="container text-center">
+        <p class="mb-0">© 2025 Universidad Nacional de Colombia</p>
+    </div>
+</footer>
+</body>
+</html>

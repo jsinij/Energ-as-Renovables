@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #6A9C89;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        .figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            height: 310px;
+        }
+
+        .figure a {
+            display: block;
+            width: 100%;
+            height: 260px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+
+        .figure-caption {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFF5E4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:8080/" style="margin: 0%;">
+                <img src="assets/nav-icon.png" alt="Logo" width="63" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="http://localhost:8080/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes.html">¿Quiénes somos?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Funcionalidades</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="produccion.html">Producción</a></li>
+                            <li><a class="dropdown-item" href="consumo.html">Consumo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center" style="margin-top: 30px">
+
+        <!-- Imagen 1 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/1.jpg" target="_blank">
+                    <img src="assets/1.jpg" class="figure-img img-fluid" alt="Descripción de la imagen 1">
+                </a>
+                <figcaption class="figure-caption">Integrante en fase de desarrollo.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/2.png" target="_blank">
+                    <img src="assets/2.png" class="figure-img img-fluid" alt="Descripción de la imagen 2">
+                </a>
+                <figcaption class="figure-caption">Ejemplo de resultados de producción obtenidos.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/1.png" target="_blank">
+                    <img src="assets/1.png" class="figure-img img-fluid" alt="Descripción de la imagen 3">
+                </a>
+                <figcaption class="figure-caption">Parte del desarrollo de nuestro FrontEnd</figcaption>
+            </figure>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/3.png" target="_blank">
+                    <img src="assets/3.png" class="figure-img img-fluid" alt="Descripción de la imagen 4">
+                </a>
+                <figcaption class="figure-caption">Ejemplo de resultados de consumo obtenidos.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/4.png" target="_blank">
+                    <img src="assets/4.png" class="figure-img img-fluid" alt="Descripción de la imagen 5">
+                </a>
+                <figcaption class="figure-caption">Parte del desarrollo de nuestro Backend.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="col d-flex justify-content-center">
+            <figure class="figure">
+                <a href="assets/5.jpg" target="_blank">
+                    <img src="assets/5.jpg" class="figure-img img-fluid" alt="Descripción de la imagen 6">
+                </a>
+                <figcaption class="figure-caption">Integrante en fase de desarrollo.</figcaption>
+            </figure>
+        </div>
+
+    </div>
+</main>
+
+<footer class="text-white py-2 mt-auto">
+    <div class="container text-center">
+        <p class="mb-0">© 2025 Universidad Nacional de Colombia</p>
+    </div>
+</footer>
+</body>
+</html>
